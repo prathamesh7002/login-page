@@ -1,0 +1,126 @@
+body{
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 80px;
+  padding: 0;
+  background-color: #FFA901;
+}
+main{
+  background-image: url('freepik__upload__99410 (1).png'); /* Path to your image */
+  background-size: cover; /* Cover the entire page */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating */
+  height: 100vh; /* Full viewport height */ /* Full width of the viewport */ 
+}
+header{
+  width: 100%;
+  height: 15px;
+  margin: 0%;
+  padding: 0%;
+}
+h1{
+    color: black;
+   text-align:center ; 
+}
+main p{
+    color:#284200;
+    text-align : left;
+    padding-top: 300px;
+    padding-left: 190px;
+    font-style: italic;
+    font-size:32px;
+}
+.container{
+
+        position: absolute; 
+        top: 200px; 
+        left: 960px; 
+        width: 342px; 
+        height: 391px; 
+        background: #F8F9FAFF; /* neutral-150 */
+        border-radius: 3px; /* border-xs */
+        box-shadow: 0px 8px 17px #171a1f26, 0px 0px 2px #171a1f1F; /* shadow-l */
+        opacity: 1;
+      }
+ 
+.container select{ 
+  width: 295px;
+  height: 40px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color:#999;
+}
+.container select option{
+  color: black;
+}
+.container select::placeholder{
+  color:black; 
+}
+.container button{
+ /* Button */
+    position: absolute; 
+    top: 205px;  
+    width: 300px; 
+    height: 36px; 
+    padding: 0 12px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-family: Inter; 
+    font-size: 18px; 
+    line-height: 22px; 
+    font-weight: 400; 
+    color: #FFFFFFFF; /* white */
+    background: #636AE8FF; /* primary-500 */
+    opacity: 1; 
+    border: none; 
+    border-radius: 8px; /* border-l */
+  }
+  /* Hover */
+  .button:hover {
+    color: #FFFFFFFF; /* white */
+    background: #4850E4FF; /* primary-550 */
+  }
+  /* Pressed */
+  .button:hover:active {
+    color: #FFFFFFFF; /* white */
+    background: #2C35E0FF; /* primary-600 */
+  }
+  /* Disabled */
+  .button:disabled {
+    opacity: 0.4; 
+  } 
+
+.container form{
+    position: absolute;
+    top: 70px;
+    left: 22px;
+}
+.container input{
+    width: 275px;
+    height: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;         
+
+}
+.container input::placeholder {
+    color: #999; /* Placeholder text color */
+}
+.container .options{
+    margin-top: 325px; 
+    padding-left: 50px; 
+}
+.container .options a{
+    color: #007BFF;
+    text-decoration: none;
+    margin-right: 65px;
+}
+.container .options a:hover{
+    text-decoration:underline;
+}
