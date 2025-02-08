@@ -6,16 +6,16 @@ body{
   padding: 0;
   background-color: #FFA901;
 }
-main{
+main {
   position: relative;
-  background-image: url('freepik__upload__99410 (1).png'); 
-  background-size: cover; 
+  background-image: url('../images/freepik__upload__99410%20(1).png'); 
+  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; 
-  height: 100vh; 
+  background-repeat: no-repeat;
+  height: 100vh;
   overflow: hidden;
-  
 }
+
 h1{
   color: rgb(0, 0, 0);
  text-align:center ; 
