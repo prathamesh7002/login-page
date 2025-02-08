@@ -7,14 +7,15 @@ body{
   background-color: #FFA901;
 }
 main{
-  background-image: url('freepik__upload__99410 (1).png'); /* Path to your image */
-  background-size: cover; /* Cover the entire page */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent repeating */
-  height: 100vh; /* Full viewport height */ /* Full width of the viewport */ 
+  position: relative;
+  background-image: url('freepik__upload__99410 (1).png'); 
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  height: 100vh; 
+  overflow: hidden;
   
 }
-
 h1{
   color: rgb(0, 0, 0);
  text-align:center ; 
@@ -70,12 +71,19 @@ p2{
         box-shadow: 0px 8px 17px #171a1f26, 0px 0px 2px #171a1f1F; /* shadow-l */
         opacity:1;
         border-radius: 10px;
+      
       }
- 
+ .container .logo-user{
+  text-align:center;
+  height: 50px;
+  width: 60px;
+padding-left: 141px;
+ }
 .container select{ 
   width: 295px;
   height: 40px;
   padding: 10px;
+  padding-left: 35px;
   margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -128,10 +136,24 @@ p2{
     top: 70px;
     left: 22px;
 }
-.container input{
-    width: 275px;
+.container .input-container {
+  position: relative;
+  
+}
+
+.container .input-container i {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #aaa; /* Icon color */
+      pointer-events: none;
+}
+.container .input-container input{
+    width: 245px;
     height: 20px;
     padding: 10px;
+    padding-left:40px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -142,7 +164,10 @@ p2{
     color: #999; /* Placeholder text color */
 }
 .container .options{
-    margin-top: 325px; 
+    width: 300px;
+    height: 30px;
+    margin: 0px;
+    padding-top: 275px; 
     padding-left: 50px; 
 }
 .container .options a{

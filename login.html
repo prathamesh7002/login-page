@@ -3,6 +3,8 @@
 <head>
     <title>Login page</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <main>
@@ -13,16 +15,25 @@
         <p2>Welcome To Farmers Market</p2>
     </main>
     <div class="container">
-        
+        <img src="user.png" class="logo-user">
         <form>
-            <input type="text" name="username" placeholder="Username/Email">
-            <input type="password" name="password" placeholder="Password">
-            <select>
-                <option value="0" class="lang">Select language</option>
-                <option value="1">English</option>
-                <option value="2">Hindi</option>
-                <option value="3">Marathi</option>
-            </select>
+            <div class="input-container">
+                <input  type="text" name="username" placeholder="Username/Email">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-container">
+                <input type="password" name="password" placeholder="Password">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="input-container">
+                <select>
+                    <option value="0" class="lang">Select language</option>
+                    <option value="1">English</option>
+                    <option value="2">Hindi</option>
+                    <option value="3">Marathi</option>
+                </select>
+                <i class="fas fa-globe"></i>
+            </div>
             <button type="submit">Login</button>
         </form>
         <div class="options">
