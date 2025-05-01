@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
   margin-left: 5%;
   margin-right: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 5%; 
   margin-top: 5%;
   padding: 0;
   background-color: #ffaa01e8;
 }
+
 main {
   position: relative;
   background-image: url('../images/freepik__upload__99410%20(1).png');
@@ -59,40 +61,38 @@ p2 {
   color: #B23D3F;
   font-size: 30px;
   text-align: left;
-  padding-top: 10pxpx;
+  padding-top: 10px;
   padding-left: 190px;
   font-weight: italic;
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin: 0%;
-
 }
 
 .container {
-
-  position:absolute;
+  position: absolute;
   top: 29%;
   left: 65%;
   width: 342px;
   height: 391px;
   background: #F8F9FAFF;
-  /* neutral-150 */
-  border-radius: 3px;
-  /* border-xs */
-  box-shadow: 0px 8px 17px #171a1f26, 0px 0px 2px #171a1f1F;
-  /* shadow-l */
-  opacity: 1;
   border-radius: 10px;
- display: flex;
- /* flex-direction: column;
- justify-content: center;
- align-items: center; */
+  box-shadow: 0px 8px 17px #171a1f26, 0px 0px 2px #171a1f1F;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10; /* Ensure it is above other elements */
 }
 
 .container .logo-user {
+  position: absolute; /* Use absolute positioning */
+  top: 20px; /* Adjust the vertical position */
+  left: 50%; /* Center horizontally relative to the container */
+  transform: translateX(-50%); /* Center the logo exactly */
   text-align: center;
   height: 50px;
   width: 60px;
-  padding-left: 141px;
 }
 
 .container select {
@@ -116,7 +116,6 @@ p2 {
 }
 
 .container button {
-  /* Button */
   position: absolute;
   top: 205px;
   width: 300px;
@@ -130,29 +129,22 @@ p2 {
   line-height: 22px;
   font-weight: 400;
   color: #FFFFFFFF;
-  /* white */
   background: #636AE8FF;
-  /* primary-500 */
   opacity: 1;
   border: none;
   border-radius: 8px;
-  /* border-l */
 }
 
 /* Hover */
 .button:hover {
   color: #FFFFFFFF;
-  /* white */
   background: #4850E4FF;
-  /* primary-550 */
 }
 
 /* Pressed */
 .button:hover:active {
   color: #FFFFFFFF;
-  /* white */
   background: #2C35E0FF;
-  /* primary-600 */
 }
 
 /* Disabled */
@@ -164,11 +156,12 @@ p2 {
   position: absolute;
   top: 70px;
   left: 22px;
+  z-index: 11; /* Ensure form is above other elements */
 }
 
 .container .input-container {
   position: relative;
-
+  z-index: 12; /* Ensure input container is above other elements */
 }
 
 .container .input-container i {
@@ -177,7 +170,6 @@ p2 {
   top: 50%;
   transform: translateY(-50%);
   color: #aaa;
-  /* Icon color */
   pointer-events: none;
 }
 
@@ -190,28 +182,81 @@ p2 {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
-
+  z-index: 13; /* Ensure input is clickable */
 }
 
 .container input::placeholder {
   color: #999;
-  /* Placeholder text color */
 }
 
 .container .options {
   width: 300px;
   height: 30px;
-  margin: 0px;
-  padding-top: 275px;
-  padding-left: 50px;
+  margin: 0;
+  padding-top: 315px;
+  position: absolute;
+  text-align: left;
+  padding-left: 55px;
 }
 
 .container .options a {
   color: #007BFF;
   text-decoration: none;
-  margin-right: 65px;
+  margin-right: 0;
+  padding-right: 70px;
 }
 
 .container .options a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  background-color: #ffcc00;
+  text-align: center;
+  left: 0%;
+  color: #ffffff;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin-top: 5%;
+  margin-left: 0%;
+  padding-left: 0%;
+}
+
+footer p {
+  text-align: center;
+  padding-left: 0px;
+  padding-top: 15px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin: 0%;
+  font-family: 'Lato', sans-serif;
+}
+
+footer .contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 8%;
+  padding-top: 1.5%;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  margin: 0%;
+}
+
+footer .contact a {
+  color: #ffffff;
+  padding-left: 15%;
+  padding-top: 0%;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  margin: 0%;
+}
+
+footer a:hover {
   text-decoration: underline;
 }
